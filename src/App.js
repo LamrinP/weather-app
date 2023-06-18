@@ -1,4 +1,3 @@
-// import myBgImg from "./as";
 import React, { useState } from "react";
 import "./App.css";
 import {
@@ -61,10 +60,6 @@ function App() {
             <div className="section-upper-app">
               <h2>{weather.name}</h2>
               {weather.main ? <h3>{weather.main.temp.toFixed()}°</h3> : null}
-              {/* <img
-              src="https:img.icons8.com/?size=512&id=43252&format=png"
-              alt="weather"
-            ></img> */}
               {weather.weather ? <p>{weather.weather[0].description}</p> : null}
               <divs
                 className="section-high-low"

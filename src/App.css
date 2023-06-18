@@ -8,9 +8,6 @@
   transition: 0.5s;
 }
 
-/* position: absolute; 
-background-position: center;*/
-
 .app.sunny {
   background-image: url(./Assets/Sunny.jpg);
 }
