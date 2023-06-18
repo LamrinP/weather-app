@@ -1,0 +1,30 @@
+{
+  "coord": { "lon": 174.7667, "lat": -36.8667 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "Clear Sky", "icon": "01n" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 282.96,
+    "feels_like": 281.38,
+    "temp_min": 280.46,
+    "temp_max": 285.44,
+    "pressure": 1018,
+    "humidity": 65
+  },
+  "visibility": 10000,
+  "wind": { "speed": 3.09, "deg": 200 },
+  "clouds": { "all": 1 },
+  "dt": 1686727308,
+  "sys": {
+    "type": 2,
+    "id": 2012285,
+    "country": "NZ",
+    "sunrise": 1686684685,
+    "sunset": 1686719446
+  },
+  "timezone": 43200,
+  "id": 2193733,
+  "name": "Auckland",
+  "cod": 200
+}

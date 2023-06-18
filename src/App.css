@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.app {
+  background-image: url(./Assets/Weather\ app.avif);
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* position: absolute; 
+background-position: center;*/
+
+.app.sunny {
+  background-image: url(./Assets/Sunny.jpg);
+}
+.app.raining {
+  background-image: url(./Assets/Raining.jpg);
+}
+.app.overcast {
+  background-image: url(./Assets/Overcast.jpg);
+}
+.app.thunderstorm {
+  background-image: url(./Assets/thunderstorm.jpg);
+}
+.app.snow {
+  background-image: url(./Assets/Snow.jpg);
+}
+.app.clear {
+  background-image: url(./Assets/Clear\ Skies.jpg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.city-search-bar {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.city-search-bar > input {
+  border: none;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.city-search-bar > input:hover {
+  outline: none;
+}
+
+.city-search-bar > ::placeholder {
+  color: white;
+}
+
+.section-upper-app {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  width: auto;
+}
+
+.section-upper-app > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-upper-app > p {
+  font-size: 2.5rem;
+}
+
+.section-upper-app > img {
+  max-width: 20rem;
+  height: auto;
+}
+
+.section-upper-app > h3 {
+  font-size: 6rem;
+  margin: 0 0 0 0;
+}
+
+.section-high-low {
+  width: 10rem;
+}
+
+.bottom-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: auto;
+}
+.description-mains {
+  text-align: center;
+}
+.description-mains > p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .bottom-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+  .description-mains > p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .section-upper-app > p {
+    font-size: 2rem;
+  }
+  .app {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
   }
 }
