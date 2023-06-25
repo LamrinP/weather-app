@@ -21,7 +21,6 @@ function App() {
         .then((result) => {
           setWeather(result);
           setLocation("");
-          console.log(result);
         });
     }
   };
