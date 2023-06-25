@@ -1,30 +1,11 @@
-.app {
-  background-image: url(./Assets/Weather\ app.avif);
+.container {
+  background-image: url(./assets/Weather\ app.avif);
   background-size: cover;
   position: absolute;
   background-position: center;
   width: 100%;
   height: 100%;
   transition: 0.5s;
-}
-
-.app.sunny {
-  background-image: url(./Assets/Sunny.jpg);
-}
-.app.raining {
-  background-image: url(./Assets/Raining.jpg);
-}
-.app.overcast {
-  background-image: url(./Assets/Overcast.jpg);
-}
-.app.thunderstorm {
-  background-image: url(./Assets/thunderstorm.jpg);
-}
-.app.snow {
-  background-image: url(./Assets/Snow.jpg);
-}
-.app.clear {
-  background-image: url(./Assets/Clear\ Skies.jpg);
 }
 
 .section {
@@ -131,11 +112,5 @@
   }
   .section-upper-app > p {
     font-size: 2rem;
-  }
-  .app {
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    position: relative;
   }
 }
