@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="container">
       <div className="section">
-        <div className="city-search-bar">
+        <div className="enter-city-search-bar">
           <input
             type="text"
             name="location"
@@ -38,13 +38,14 @@ function App() {
             onKeyDown={getWeatherInfo}
           />
         </div>
+
         {weather.name != undefined && (
-          <div className="section-upper-app">
+          <div className="main-weather-info">
             <h2>{weather.name}</h2>
             {weather.main ? <h3>{weather.main.temp.toFixed()}°</h3> : null}
             {weather.weather ? <p>{weather.weather[0].description}</p> : null}
             <div
-              className="section-high-low"
+              className="high-low-temp"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -62,42 +63,42 @@ function App() {
         )}
 
         {weather.name != undefined && (
-          <div className="bottom-card">
-            <div className="description-mains">
+          <div className="additional-weather-info">
+            <div className="weather-descriptions">
               <p>
                 <GiClothes />
                 Feels like:
               </p>
               {weather.main ? <p>{weather.main.feels_like}°</p> : null}
             </div>
-            <div className="description-mains">
+            <div className="weather-descriptions">
               <p>
                 <WiBarometer />
                 Pressure:
               </p>
               {weather.main ? <p>{weather.main.pressure} mbar</p> : null}
             </div>
-            <div className="description-mains">
+            <div className="weather-descriptions">
               <p>
                 <WiHumidity />
                 Humidity:
               </p>
               {weather.main ? <p>{weather.main.humidity}°</p> : null}
             </div>
-            <div className="description-mains">
+            <div className="weather-descriptions">
               <p>
                 <GiLookAt />
                 Visibility:
               </p>
               {weather.main ? <p>{weather.visibility}m</p> : null}
             </div>
-            <div className="description-mains">
+            <div className="weather-descriptions">
               <p>
                 <WiStrongWind /> Wind speed:
               </p>
               {weather.main ? <p>{weather.wind.speed} km/h</p> : null}
             </div>
-            <div className="description-mains">
+            <div className="weather-descriptions">
               <p>
                 <WiWindDeg />
                 Wind degree:
